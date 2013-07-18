@@ -1,6 +1,8 @@
 package 
 {
 	import net.flashpunk.Engine;
+	import net.flashpunk.FP;
+	import worlds.GameWorld;
 	
 	[SWF(width="640", height="480")]
 	
@@ -19,8 +21,9 @@ package
 		override public function init():void 
 		{
 			super.init();
+			FP.world = new GameWorld();
+			//FP.console.enable();
 		}
-		
 	}
 	
 }
